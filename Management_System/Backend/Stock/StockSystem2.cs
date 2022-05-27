@@ -32,14 +32,15 @@ namespace Backend.Stock
         // filter by item weight
         public List<StockSystem> filterItems(float byWeight)
         {
-            List<StockSystem> listTofilter = itemsList;
+            List<StockSystem> listTofilter = new List<StockSystem>(ItemsList);
             return listTofilter.Where(var => var.ItemWeight == byWeight).ToList();
         }
 
         // filter by the number of products that have a greater or equal quantity to the specified
         public List<StockSystem> filterItems(int byQuantity)
         {
-            return itemsList.Where(var => var.ItemQuantity >= byQuantity).ToList(); //// !!!! >=
+            List<StockSystem> listTofilter = new List<StockSystem>(ItemsList);
+            return listTofilter.Where(var => var.ItemQuantity >= byQuantity).ToList(); 
         }
 
         // sums all production cost of items
@@ -47,7 +48,7 @@ namespace Backend.Stock
         {
             float sum = 0;
             foreach (StockSystem a in itemsList)
-                sum += a.ItemProdCost;
+                sum += a.ItemProdCost*a.ItemQuantity;
             return sum;
         }
 
@@ -62,13 +63,13 @@ namespace Backend.Stock
         //sorting
         public List<StockSystem> sortItems(string sortTypeOrder)
         {
-            List<StockSystem> sortedList = ItemsList;
+            List<StockSystem> sortedList = new List<StockSystem>(ItemsList);
 
             //sorting ascending order
             if (sortTypeOrder.Contains("By name"))
                 sortedList.Sort((StockSystem x, StockSystem y) =>
                    x.ItemName.CompareTo(y.ItemName));
-            else if(sortTypeOrder.Contains("By quantity"))
+            else if (sortTypeOrder.Contains("By quantity"))
                 sortedList.Sort((StockSystem x, StockSystem y) =>
                    x.ItemQuantity.CompareTo(y.ItemQuantity));
 
@@ -80,7 +81,26 @@ namespace Backend.Stock
         }
         public int CompareTo(StockSystem itemToComp)
         {
-            return this.itemName.CompareTo(itemToComp.itemName);
+            return this.ItemName.CompareTo(itemToComp.ItemName);
+        }
+
+        // sorting can be performed with Bubble Sort ->
+        private void sorting()
+        {
+            List<StockSystem> sortedList = new List<StockSystem>(ItemsList);
+            int n = sortedList.Count;
+            for (int i = 0; i < n - 1; i++)
+            {
+                for (int j = 0; j < n - i - 1; j++)
+                {
+                    if (sortedList[j].itemQuantity > sortedList[j + 1].itemQuantity)
+                    {
+                        StockSystem temp = sortedList[j];
+                        sortedList[j] = sortedList[j + 1];
+                        sortedList[j + 1] = temp;
+                    }
+                }
+            }
         }
 
     }

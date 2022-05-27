@@ -53,14 +53,17 @@ namespace Backend.Stock
         // saving data in json file
         public void stockSysytemToFile()
         {
-            var str = JsonConvert.SerializeObject(itemsList);
-            File.WriteAllText("StockSystem.json", str);
+            if (itemsList.Count > 0)
+            {
+                var str = JsonConvert.SerializeObject(itemsList);
+                File.WriteAllText("StockSystem.json", str);
+            }
         }
 
         // getting data from json file
         public void getDataFromFile()
         {
-            if (File.Exists("StockSystem.json") && new FileInfo("StockSystem.json").Length > 0)
+            if (File.Exists("StockSystem.json") && new FileInfo("StockSystem.json").Length > 2)// empty json file contains two chars -> []
             {
                 string str = File.ReadAllText("StockSystem.json"); // temp variable for info from file
                 var list = JsonConvert.DeserializeObject<List<StockSystem>>(str);

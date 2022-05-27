@@ -40,14 +40,17 @@ namespace Backend.Vehicle
         // saving data in json file
         public void vehiclesToFile()
         {
-            var str = JsonConvert.SerializeObject(vehiclesList);
-            File.WriteAllText("vehiclesList.json", str);
+            if (vehiclesList.Count > 0)
+            {
+                var str = JsonConvert.SerializeObject(vehiclesList);
+                File.WriteAllText("vehiclesList.json", str);
+            }
         }
 
         // getting data from json file
         public void getDataFromFile()
         {
-            if (File.Exists("vehiclesList.json") && new FileInfo("vehiclesList.json").Length > 0)
+            if (File.Exists("vehiclesList.json") &&  new FileInfo("vehiclesList.json").Length > 2) // empty json file contains two chars -> []
             {
                 string str = File.ReadAllText("vehiclesList.json"); // temp variable for info from file
                 var list = JsonConvert.DeserializeObject<List<VehicleD>>(str);

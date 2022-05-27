@@ -77,14 +77,17 @@ namespace Backend.Orders
         // saving data in json file
         public void ordersToFile()
         {
-            var str = JsonConvert.SerializeObject(ordersList);
-            File.WriteAllText("ordersList.json", str);
+            if (ordersList.Count > 0)
+            {
+                var str = JsonConvert.SerializeObject(ordersList);
+                File.WriteAllText("ordersList.json", str);
+            }
         }
 
         // getting data from json file
         public void getDataFromFile()
         {
-            if (File.Exists("ordersList.json") && new FileInfo("ordersList.json").Length > 0)
+            if (File.Exists("ordersList.json") &&  new FileInfo("ordersList.json").Length > 2)// empty json file contains two chars -> []
             {
                 string str = File.ReadAllText("ordersList.json"); // temp variable for info from file
                 var list = JsonConvert.DeserializeObject<List<OrderD>>(str);
