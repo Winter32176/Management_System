@@ -103,9 +103,24 @@ namespace Management_System.IU
             this.stockCriteriaCB = new System.Windows.Forms.ComboBox();
             this.stockOpTypeCB = new System.Windows.Forms.ComboBox();
             this.stockSFSumData = new System.Windows.Forms.DataGridView();
+            this.itemIDDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemNameDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemTypeDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemWeightDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemQuantityDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemProdCostDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemSellPriceDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stockSystemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.stockChangePanel = new System.Windows.Forms.Panel();
             this.stockChangeData = new System.Windows.Forms.DataGridView();
+            this.itemIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemNameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemTypeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemWeightDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemQuantityDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemProdCostDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemSellPriceDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stockChangeIdTB = new System.Windows.Forms.TextBox();
             this.stockChangeNameTB = new System.Windows.Forms.TextBox();
             this.stockChangeTypeCB = new System.Windows.Forms.ComboBox();
@@ -126,6 +141,13 @@ namespace Management_System.IU
             this.stockAddLabel = new System.Windows.Forms.Label();
             this.stockDeletePanel = new System.Windows.Forms.Panel();
             this.stockDeleteData = new System.Windows.Forms.DataGridView();
+            this.itemIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemTypeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemWeightDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemQuantityDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemProdCostDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemSellPriceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deleteStockItemB = new System.Windows.Forms.Button();
             this.deleteStockItemTB = new System.Windows.Forms.TextBox();
             this.stockDeleteLabel = new System.Windows.Forms.Label();
@@ -137,34 +159,6 @@ namespace Management_System.IU
             this.stockDisplaySortCB = new System.Windows.Forms.ComboBox();
             this.stockDisplayLabel = new System.Windows.Forms.Label();
             this.stockDisplayData = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.stockMenuSearchMoreB = new System.Windows.Forms.Button();
-            this.stockMenuDisplayB = new System.Windows.Forms.Button();
-            this.stockMenuDeleteB = new System.Windows.Forms.Button();
-            this.stockMenuChangeB = new System.Windows.Forms.Button();
-            this.stockMenuAddB = new System.Windows.Forms.Button();
-            this.itemIDDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemNameDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemTypeDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemWeightDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemQuantityDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemProdCostDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemSellPriceDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stockSystemBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.itemIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemNameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemTypeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemWeightDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemQuantityDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemProdCostDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemSellPriceDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemTypeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemWeightDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemQuantityDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemProdCostDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemSellPriceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -172,6 +166,12 @@ namespace Management_System.IU
             this.itemQuantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemProdCostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemSellPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.stockMenuSearchMoreB = new System.Windows.Forms.Button();
+            this.stockMenuDisplayB = new System.Windows.Forms.Button();
+            this.stockMenuDeleteB = new System.Windows.Forms.Button();
+            this.stockMenuChangeB = new System.Windows.Forms.Button();
+            this.stockMenuAddB = new System.Windows.Forms.Button();
             this.vehicleDBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vehicleDBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.mainMenu.SuspendLayout();
@@ -196,6 +196,7 @@ namespace Management_System.IU
             this.stockPanel.SuspendLayout();
             this.stockSearchSortPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockSFSumData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stockSystemBindingSource)).BeginInit();
             this.stockChangePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockChangeData)).BeginInit();
             this.stockAddPanel.SuspendLayout();
@@ -204,7 +205,6 @@ namespace Management_System.IU
             this.stockDisplayPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockDisplayData)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.stockSystemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleDBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleDBindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -344,6 +344,7 @@ namespace Management_System.IU
             this.orderAddPanel.Size = new System.Drawing.Size(1116, 543);
             this.orderAddPanel.TabIndex = 3;
             this.orderAddPanel.Visible = false;
+            this.orderAddPanel.VisibleChanged += new System.EventHandler(this.orderAddPanel_visibleChange);
             // 
             // vehiclesCB
             // 
@@ -452,10 +453,10 @@ namespace Management_System.IU
             this.orderPanel.Controls.Add(this.orderDeletePanel);
             this.orderPanel.Controls.Add(this.orderDisplayPanel);
             this.orderPanel.Controls.Add(this.orderMenu);
-            this.orderPanel.Location = new System.Drawing.Point(904, 538);
+            this.orderPanel.Location = new System.Drawing.Point(209, 156);
             this.orderPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.orderPanel.Name = "orderPanel";
-            this.orderPanel.Size = new System.Drawing.Size(579, 259);
+            this.orderPanel.Size = new System.Drawing.Size(717, 388);
             this.orderPanel.TabIndex = 3;
             this.orderPanel.Visible = false;
             // 
@@ -620,9 +621,9 @@ namespace Management_System.IU
             this.vehiclePanel.Controls.Add(this.vehicleDeletePanel);
             this.vehiclePanel.Controls.Add(this.vehiclesDisplayPanel);
             this.vehiclePanel.Controls.Add(this.vehicleMenu);
-            this.vehiclePanel.Location = new System.Drawing.Point(904, 204);
+            this.vehiclePanel.Location = new System.Drawing.Point(1038, 202);
             this.vehiclePanel.Name = "vehiclePanel";
-            this.vehiclePanel.Size = new System.Drawing.Size(565, 276);
+            this.vehiclePanel.Size = new System.Drawing.Size(431, 278);
             this.vehiclePanel.TabIndex = 5;
             this.vehiclePanel.Visible = false;
             // 
@@ -962,9 +963,9 @@ namespace Management_System.IU
             this.stockPanel.Controls.Add(this.stockDeletePanel);
             this.stockPanel.Controls.Add(this.stockDisplayPanel);
             this.stockPanel.Controls.Add(this.panel1);
-            this.stockPanel.Location = new System.Drawing.Point(355, 509);
+            this.stockPanel.Location = new System.Drawing.Point(334, 514);
             this.stockPanel.Name = "stockPanel";
-            this.stockPanel.Size = new System.Drawing.Size(418, 268);
+            this.stockPanel.Size = new System.Drawing.Size(439, 263);
             this.stockPanel.TabIndex = 6;
             this.stockPanel.Visible = false;
             // 
@@ -1051,6 +1052,73 @@ namespace Management_System.IU
             this.stockSFSumData.Size = new System.Drawing.Size(1180, 381);
             this.stockSFSumData.TabIndex = 10;
             // 
+            // itemIDDataGridViewTextBoxColumn3
+            // 
+            this.itemIDDataGridViewTextBoxColumn3.DataPropertyName = "ItemID";
+            this.itemIDDataGridViewTextBoxColumn3.HeaderText = "ItemID";
+            this.itemIDDataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.itemIDDataGridViewTextBoxColumn3.Name = "itemIDDataGridViewTextBoxColumn3";
+            this.itemIDDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.itemIDDataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // itemNameDataGridViewTextBoxColumn3
+            // 
+            this.itemNameDataGridViewTextBoxColumn3.DataPropertyName = "ItemName";
+            this.itemNameDataGridViewTextBoxColumn3.HeaderText = "ItemName";
+            this.itemNameDataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.itemNameDataGridViewTextBoxColumn3.Name = "itemNameDataGridViewTextBoxColumn3";
+            this.itemNameDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.itemNameDataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // itemTypeDataGridViewTextBoxColumn3
+            // 
+            this.itemTypeDataGridViewTextBoxColumn3.DataPropertyName = "ItemType";
+            this.itemTypeDataGridViewTextBoxColumn3.HeaderText = "ItemType";
+            this.itemTypeDataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.itemTypeDataGridViewTextBoxColumn3.Name = "itemTypeDataGridViewTextBoxColumn3";
+            this.itemTypeDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.itemTypeDataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // itemWeightDataGridViewTextBoxColumn3
+            // 
+            this.itemWeightDataGridViewTextBoxColumn3.DataPropertyName = "ItemWeight";
+            this.itemWeightDataGridViewTextBoxColumn3.HeaderText = "ItemWeight";
+            this.itemWeightDataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.itemWeightDataGridViewTextBoxColumn3.Name = "itemWeightDataGridViewTextBoxColumn3";
+            this.itemWeightDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.itemWeightDataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // itemQuantityDataGridViewTextBoxColumn3
+            // 
+            this.itemQuantityDataGridViewTextBoxColumn3.DataPropertyName = "ItemQuantity";
+            this.itemQuantityDataGridViewTextBoxColumn3.HeaderText = "ItemQuantity";
+            this.itemQuantityDataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.itemQuantityDataGridViewTextBoxColumn3.Name = "itemQuantityDataGridViewTextBoxColumn3";
+            this.itemQuantityDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.itemQuantityDataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // itemProdCostDataGridViewTextBoxColumn3
+            // 
+            this.itemProdCostDataGridViewTextBoxColumn3.DataPropertyName = "ItemProdCost";
+            this.itemProdCostDataGridViewTextBoxColumn3.HeaderText = "ItemProdCost";
+            this.itemProdCostDataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.itemProdCostDataGridViewTextBoxColumn3.Name = "itemProdCostDataGridViewTextBoxColumn3";
+            this.itemProdCostDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.itemProdCostDataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // itemSellPriceDataGridViewTextBoxColumn3
+            // 
+            this.itemSellPriceDataGridViewTextBoxColumn3.DataPropertyName = "ItemSellPrice";
+            this.itemSellPriceDataGridViewTextBoxColumn3.HeaderText = "ItemSellPrice";
+            this.itemSellPriceDataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.itemSellPriceDataGridViewTextBoxColumn3.Name = "itemSellPriceDataGridViewTextBoxColumn3";
+            this.itemSellPriceDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.itemSellPriceDataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // stockSystemBindingSource
+            // 
+            this.stockSystemBindingSource.DataSource = typeof(Backend.Stock.StockSystem);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -1101,6 +1169,69 @@ namespace Management_System.IU
             this.stockChangeData.RowTemplate.Height = 24;
             this.stockChangeData.Size = new System.Drawing.Size(526, 496);
             this.stockChangeData.TabIndex = 28;
+            // 
+            // itemIDDataGridViewTextBoxColumn2
+            // 
+            this.itemIDDataGridViewTextBoxColumn2.DataPropertyName = "ItemID";
+            this.itemIDDataGridViewTextBoxColumn2.HeaderText = "ItemID";
+            this.itemIDDataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.itemIDDataGridViewTextBoxColumn2.Name = "itemIDDataGridViewTextBoxColumn2";
+            this.itemIDDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.itemIDDataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // itemNameDataGridViewTextBoxColumn2
+            // 
+            this.itemNameDataGridViewTextBoxColumn2.DataPropertyName = "ItemName";
+            this.itemNameDataGridViewTextBoxColumn2.HeaderText = "ItemName";
+            this.itemNameDataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.itemNameDataGridViewTextBoxColumn2.Name = "itemNameDataGridViewTextBoxColumn2";
+            this.itemNameDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.itemNameDataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // itemTypeDataGridViewTextBoxColumn2
+            // 
+            this.itemTypeDataGridViewTextBoxColumn2.DataPropertyName = "ItemType";
+            this.itemTypeDataGridViewTextBoxColumn2.HeaderText = "ItemType";
+            this.itemTypeDataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.itemTypeDataGridViewTextBoxColumn2.Name = "itemTypeDataGridViewTextBoxColumn2";
+            this.itemTypeDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.itemTypeDataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // itemWeightDataGridViewTextBoxColumn2
+            // 
+            this.itemWeightDataGridViewTextBoxColumn2.DataPropertyName = "ItemWeight";
+            this.itemWeightDataGridViewTextBoxColumn2.HeaderText = "ItemWeight";
+            this.itemWeightDataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.itemWeightDataGridViewTextBoxColumn2.Name = "itemWeightDataGridViewTextBoxColumn2";
+            this.itemWeightDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.itemWeightDataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // itemQuantityDataGridViewTextBoxColumn2
+            // 
+            this.itemQuantityDataGridViewTextBoxColumn2.DataPropertyName = "ItemQuantity";
+            this.itemQuantityDataGridViewTextBoxColumn2.HeaderText = "ItemQuantity";
+            this.itemQuantityDataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.itemQuantityDataGridViewTextBoxColumn2.Name = "itemQuantityDataGridViewTextBoxColumn2";
+            this.itemQuantityDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.itemQuantityDataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // itemProdCostDataGridViewTextBoxColumn2
+            // 
+            this.itemProdCostDataGridViewTextBoxColumn2.DataPropertyName = "ItemProdCost";
+            this.itemProdCostDataGridViewTextBoxColumn2.HeaderText = "ItemProdCost";
+            this.itemProdCostDataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.itemProdCostDataGridViewTextBoxColumn2.Name = "itemProdCostDataGridViewTextBoxColumn2";
+            this.itemProdCostDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.itemProdCostDataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // itemSellPriceDataGridViewTextBoxColumn2
+            // 
+            this.itemSellPriceDataGridViewTextBoxColumn2.DataPropertyName = "ItemSellPrice";
+            this.itemSellPriceDataGridViewTextBoxColumn2.HeaderText = "ItemSellPrice";
+            this.itemSellPriceDataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.itemSellPriceDataGridViewTextBoxColumn2.Name = "itemSellPriceDataGridViewTextBoxColumn2";
+            this.itemSellPriceDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.itemSellPriceDataGridViewTextBoxColumn2.Width = 125;
             // 
             // stockChangeIdTB
             // 
@@ -1320,6 +1451,69 @@ namespace Management_System.IU
             this.stockDeleteData.Size = new System.Drawing.Size(746, 522);
             this.stockDeleteData.TabIndex = 11;
             // 
+            // itemIDDataGridViewTextBoxColumn1
+            // 
+            this.itemIDDataGridViewTextBoxColumn1.DataPropertyName = "ItemID";
+            this.itemIDDataGridViewTextBoxColumn1.HeaderText = "ItemID";
+            this.itemIDDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.itemIDDataGridViewTextBoxColumn1.Name = "itemIDDataGridViewTextBoxColumn1";
+            this.itemIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.itemIDDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // itemNameDataGridViewTextBoxColumn1
+            // 
+            this.itemNameDataGridViewTextBoxColumn1.DataPropertyName = "ItemName";
+            this.itemNameDataGridViewTextBoxColumn1.HeaderText = "ItemName";
+            this.itemNameDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.itemNameDataGridViewTextBoxColumn1.Name = "itemNameDataGridViewTextBoxColumn1";
+            this.itemNameDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.itemNameDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // itemTypeDataGridViewTextBoxColumn1
+            // 
+            this.itemTypeDataGridViewTextBoxColumn1.DataPropertyName = "ItemType";
+            this.itemTypeDataGridViewTextBoxColumn1.HeaderText = "ItemType";
+            this.itemTypeDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.itemTypeDataGridViewTextBoxColumn1.Name = "itemTypeDataGridViewTextBoxColumn1";
+            this.itemTypeDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.itemTypeDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // itemWeightDataGridViewTextBoxColumn1
+            // 
+            this.itemWeightDataGridViewTextBoxColumn1.DataPropertyName = "ItemWeight";
+            this.itemWeightDataGridViewTextBoxColumn1.HeaderText = "ItemWeight";
+            this.itemWeightDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.itemWeightDataGridViewTextBoxColumn1.Name = "itemWeightDataGridViewTextBoxColumn1";
+            this.itemWeightDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.itemWeightDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // itemQuantityDataGridViewTextBoxColumn1
+            // 
+            this.itemQuantityDataGridViewTextBoxColumn1.DataPropertyName = "ItemQuantity";
+            this.itemQuantityDataGridViewTextBoxColumn1.HeaderText = "ItemQuantity";
+            this.itemQuantityDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.itemQuantityDataGridViewTextBoxColumn1.Name = "itemQuantityDataGridViewTextBoxColumn1";
+            this.itemQuantityDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.itemQuantityDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // itemProdCostDataGridViewTextBoxColumn1
+            // 
+            this.itemProdCostDataGridViewTextBoxColumn1.DataPropertyName = "ItemProdCost";
+            this.itemProdCostDataGridViewTextBoxColumn1.HeaderText = "ItemProdCost";
+            this.itemProdCostDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.itemProdCostDataGridViewTextBoxColumn1.Name = "itemProdCostDataGridViewTextBoxColumn1";
+            this.itemProdCostDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.itemProdCostDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // itemSellPriceDataGridViewTextBoxColumn1
+            // 
+            this.itemSellPriceDataGridViewTextBoxColumn1.DataPropertyName = "ItemSellPrice";
+            this.itemSellPriceDataGridViewTextBoxColumn1.HeaderText = "ItemSellPrice";
+            this.itemSellPriceDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.itemSellPriceDataGridViewTextBoxColumn1.Name = "itemSellPriceDataGridViewTextBoxColumn1";
+            this.itemSellPriceDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.itemSellPriceDataGridViewTextBoxColumn1.Width = 125;
+            // 
             // deleteStockItemB
             // 
             this.deleteStockItemB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -1455,6 +1649,69 @@ namespace Management_System.IU
             this.stockDisplayData.Size = new System.Drawing.Size(1200, 412);
             this.stockDisplayData.TabIndex = 0;
             // 
+            // itemIDDataGridViewTextBoxColumn
+            // 
+            this.itemIDDataGridViewTextBoxColumn.DataPropertyName = "ItemID";
+            this.itemIDDataGridViewTextBoxColumn.HeaderText = "ItemID";
+            this.itemIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.itemIDDataGridViewTextBoxColumn.Name = "itemIDDataGridViewTextBoxColumn";
+            this.itemIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.itemIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // itemNameDataGridViewTextBoxColumn
+            // 
+            this.itemNameDataGridViewTextBoxColumn.DataPropertyName = "ItemName";
+            this.itemNameDataGridViewTextBoxColumn.HeaderText = "ItemName";
+            this.itemNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.itemNameDataGridViewTextBoxColumn.Name = "itemNameDataGridViewTextBoxColumn";
+            this.itemNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.itemNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // itemTypeDataGridViewTextBoxColumn
+            // 
+            this.itemTypeDataGridViewTextBoxColumn.DataPropertyName = "ItemType";
+            this.itemTypeDataGridViewTextBoxColumn.HeaderText = "ItemType";
+            this.itemTypeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.itemTypeDataGridViewTextBoxColumn.Name = "itemTypeDataGridViewTextBoxColumn";
+            this.itemTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.itemTypeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // itemWeightDataGridViewTextBoxColumn
+            // 
+            this.itemWeightDataGridViewTextBoxColumn.DataPropertyName = "ItemWeight";
+            this.itemWeightDataGridViewTextBoxColumn.HeaderText = "ItemWeight";
+            this.itemWeightDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.itemWeightDataGridViewTextBoxColumn.Name = "itemWeightDataGridViewTextBoxColumn";
+            this.itemWeightDataGridViewTextBoxColumn.ReadOnly = true;
+            this.itemWeightDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // itemQuantityDataGridViewTextBoxColumn
+            // 
+            this.itemQuantityDataGridViewTextBoxColumn.DataPropertyName = "ItemQuantity";
+            this.itemQuantityDataGridViewTextBoxColumn.HeaderText = "ItemQuantity";
+            this.itemQuantityDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.itemQuantityDataGridViewTextBoxColumn.Name = "itemQuantityDataGridViewTextBoxColumn";
+            this.itemQuantityDataGridViewTextBoxColumn.ReadOnly = true;
+            this.itemQuantityDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // itemProdCostDataGridViewTextBoxColumn
+            // 
+            this.itemProdCostDataGridViewTextBoxColumn.DataPropertyName = "ItemProdCost";
+            this.itemProdCostDataGridViewTextBoxColumn.HeaderText = "ItemProdCost";
+            this.itemProdCostDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.itemProdCostDataGridViewTextBoxColumn.Name = "itemProdCostDataGridViewTextBoxColumn";
+            this.itemProdCostDataGridViewTextBoxColumn.ReadOnly = true;
+            this.itemProdCostDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // itemSellPriceDataGridViewTextBoxColumn
+            // 
+            this.itemSellPriceDataGridViewTextBoxColumn.DataPropertyName = "ItemSellPrice";
+            this.itemSellPriceDataGridViewTextBoxColumn.HeaderText = "ItemSellPrice";
+            this.itemSellPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.itemSellPriceDataGridViewTextBoxColumn.Name = "itemSellPriceDataGridViewTextBoxColumn";
+            this.itemSellPriceDataGridViewTextBoxColumn.ReadOnly = true;
+            this.itemSellPriceDataGridViewTextBoxColumn.Width = 125;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.stockMenuSearchMoreB);
@@ -1527,262 +1784,6 @@ namespace Management_System.IU
             this.stockMenuAddB.UseVisualStyleBackColor = true;
             this.stockMenuAddB.Click += new System.EventHandler(this.stockMenuAddB_Click);
             // 
-            // itemIDDataGridViewTextBoxColumn3
-            // 
-            this.itemIDDataGridViewTextBoxColumn3.DataPropertyName = "ItemID";
-            this.itemIDDataGridViewTextBoxColumn3.HeaderText = "ItemID";
-            this.itemIDDataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.itemIDDataGridViewTextBoxColumn3.Name = "itemIDDataGridViewTextBoxColumn3";
-            this.itemIDDataGridViewTextBoxColumn3.ReadOnly = true;
-            this.itemIDDataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // itemNameDataGridViewTextBoxColumn3
-            // 
-            this.itemNameDataGridViewTextBoxColumn3.DataPropertyName = "ItemName";
-            this.itemNameDataGridViewTextBoxColumn3.HeaderText = "ItemName";
-            this.itemNameDataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.itemNameDataGridViewTextBoxColumn3.Name = "itemNameDataGridViewTextBoxColumn3";
-            this.itemNameDataGridViewTextBoxColumn3.ReadOnly = true;
-            this.itemNameDataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // itemTypeDataGridViewTextBoxColumn3
-            // 
-            this.itemTypeDataGridViewTextBoxColumn3.DataPropertyName = "ItemType";
-            this.itemTypeDataGridViewTextBoxColumn3.HeaderText = "ItemType";
-            this.itemTypeDataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.itemTypeDataGridViewTextBoxColumn3.Name = "itemTypeDataGridViewTextBoxColumn3";
-            this.itemTypeDataGridViewTextBoxColumn3.ReadOnly = true;
-            this.itemTypeDataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // itemWeightDataGridViewTextBoxColumn3
-            // 
-            this.itemWeightDataGridViewTextBoxColumn3.DataPropertyName = "ItemWeight";
-            this.itemWeightDataGridViewTextBoxColumn3.HeaderText = "ItemWeight";
-            this.itemWeightDataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.itemWeightDataGridViewTextBoxColumn3.Name = "itemWeightDataGridViewTextBoxColumn3";
-            this.itemWeightDataGridViewTextBoxColumn3.ReadOnly = true;
-            this.itemWeightDataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // itemQuantityDataGridViewTextBoxColumn3
-            // 
-            this.itemQuantityDataGridViewTextBoxColumn3.DataPropertyName = "ItemQuantity";
-            this.itemQuantityDataGridViewTextBoxColumn3.HeaderText = "ItemQuantity";
-            this.itemQuantityDataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.itemQuantityDataGridViewTextBoxColumn3.Name = "itemQuantityDataGridViewTextBoxColumn3";
-            this.itemQuantityDataGridViewTextBoxColumn3.ReadOnly = true;
-            this.itemQuantityDataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // itemProdCostDataGridViewTextBoxColumn3
-            // 
-            this.itemProdCostDataGridViewTextBoxColumn3.DataPropertyName = "ItemProdCost";
-            this.itemProdCostDataGridViewTextBoxColumn3.HeaderText = "ItemProdCost";
-            this.itemProdCostDataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.itemProdCostDataGridViewTextBoxColumn3.Name = "itemProdCostDataGridViewTextBoxColumn3";
-            this.itemProdCostDataGridViewTextBoxColumn3.ReadOnly = true;
-            this.itemProdCostDataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // itemSellPriceDataGridViewTextBoxColumn3
-            // 
-            this.itemSellPriceDataGridViewTextBoxColumn3.DataPropertyName = "ItemSellPrice";
-            this.itemSellPriceDataGridViewTextBoxColumn3.HeaderText = "ItemSellPrice";
-            this.itemSellPriceDataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.itemSellPriceDataGridViewTextBoxColumn3.Name = "itemSellPriceDataGridViewTextBoxColumn3";
-            this.itemSellPriceDataGridViewTextBoxColumn3.ReadOnly = true;
-            this.itemSellPriceDataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // stockSystemBindingSource
-            // 
-            this.stockSystemBindingSource.DataSource = typeof(Backend.Stock.StockSystem);
-            // 
-            // itemIDDataGridViewTextBoxColumn2
-            // 
-            this.itemIDDataGridViewTextBoxColumn2.DataPropertyName = "ItemID";
-            this.itemIDDataGridViewTextBoxColumn2.HeaderText = "ItemID";
-            this.itemIDDataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.itemIDDataGridViewTextBoxColumn2.Name = "itemIDDataGridViewTextBoxColumn2";
-            this.itemIDDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.itemIDDataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // itemNameDataGridViewTextBoxColumn2
-            // 
-            this.itemNameDataGridViewTextBoxColumn2.DataPropertyName = "ItemName";
-            this.itemNameDataGridViewTextBoxColumn2.HeaderText = "ItemName";
-            this.itemNameDataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.itemNameDataGridViewTextBoxColumn2.Name = "itemNameDataGridViewTextBoxColumn2";
-            this.itemNameDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.itemNameDataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // itemTypeDataGridViewTextBoxColumn2
-            // 
-            this.itemTypeDataGridViewTextBoxColumn2.DataPropertyName = "ItemType";
-            this.itemTypeDataGridViewTextBoxColumn2.HeaderText = "ItemType";
-            this.itemTypeDataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.itemTypeDataGridViewTextBoxColumn2.Name = "itemTypeDataGridViewTextBoxColumn2";
-            this.itemTypeDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.itemTypeDataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // itemWeightDataGridViewTextBoxColumn2
-            // 
-            this.itemWeightDataGridViewTextBoxColumn2.DataPropertyName = "ItemWeight";
-            this.itemWeightDataGridViewTextBoxColumn2.HeaderText = "ItemWeight";
-            this.itemWeightDataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.itemWeightDataGridViewTextBoxColumn2.Name = "itemWeightDataGridViewTextBoxColumn2";
-            this.itemWeightDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.itemWeightDataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // itemQuantityDataGridViewTextBoxColumn2
-            // 
-            this.itemQuantityDataGridViewTextBoxColumn2.DataPropertyName = "ItemQuantity";
-            this.itemQuantityDataGridViewTextBoxColumn2.HeaderText = "ItemQuantity";
-            this.itemQuantityDataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.itemQuantityDataGridViewTextBoxColumn2.Name = "itemQuantityDataGridViewTextBoxColumn2";
-            this.itemQuantityDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.itemQuantityDataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // itemProdCostDataGridViewTextBoxColumn2
-            // 
-            this.itemProdCostDataGridViewTextBoxColumn2.DataPropertyName = "ItemProdCost";
-            this.itemProdCostDataGridViewTextBoxColumn2.HeaderText = "ItemProdCost";
-            this.itemProdCostDataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.itemProdCostDataGridViewTextBoxColumn2.Name = "itemProdCostDataGridViewTextBoxColumn2";
-            this.itemProdCostDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.itemProdCostDataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // itemSellPriceDataGridViewTextBoxColumn2
-            // 
-            this.itemSellPriceDataGridViewTextBoxColumn2.DataPropertyName = "ItemSellPrice";
-            this.itemSellPriceDataGridViewTextBoxColumn2.HeaderText = "ItemSellPrice";
-            this.itemSellPriceDataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.itemSellPriceDataGridViewTextBoxColumn2.Name = "itemSellPriceDataGridViewTextBoxColumn2";
-            this.itemSellPriceDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.itemSellPriceDataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // itemIDDataGridViewTextBoxColumn1
-            // 
-            this.itemIDDataGridViewTextBoxColumn1.DataPropertyName = "ItemID";
-            this.itemIDDataGridViewTextBoxColumn1.HeaderText = "ItemID";
-            this.itemIDDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.itemIDDataGridViewTextBoxColumn1.Name = "itemIDDataGridViewTextBoxColumn1";
-            this.itemIDDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.itemIDDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // itemNameDataGridViewTextBoxColumn1
-            // 
-            this.itemNameDataGridViewTextBoxColumn1.DataPropertyName = "ItemName";
-            this.itemNameDataGridViewTextBoxColumn1.HeaderText = "ItemName";
-            this.itemNameDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.itemNameDataGridViewTextBoxColumn1.Name = "itemNameDataGridViewTextBoxColumn1";
-            this.itemNameDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.itemNameDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // itemTypeDataGridViewTextBoxColumn1
-            // 
-            this.itemTypeDataGridViewTextBoxColumn1.DataPropertyName = "ItemType";
-            this.itemTypeDataGridViewTextBoxColumn1.HeaderText = "ItemType";
-            this.itemTypeDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.itemTypeDataGridViewTextBoxColumn1.Name = "itemTypeDataGridViewTextBoxColumn1";
-            this.itemTypeDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.itemTypeDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // itemWeightDataGridViewTextBoxColumn1
-            // 
-            this.itemWeightDataGridViewTextBoxColumn1.DataPropertyName = "ItemWeight";
-            this.itemWeightDataGridViewTextBoxColumn1.HeaderText = "ItemWeight";
-            this.itemWeightDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.itemWeightDataGridViewTextBoxColumn1.Name = "itemWeightDataGridViewTextBoxColumn1";
-            this.itemWeightDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.itemWeightDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // itemQuantityDataGridViewTextBoxColumn1
-            // 
-            this.itemQuantityDataGridViewTextBoxColumn1.DataPropertyName = "ItemQuantity";
-            this.itemQuantityDataGridViewTextBoxColumn1.HeaderText = "ItemQuantity";
-            this.itemQuantityDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.itemQuantityDataGridViewTextBoxColumn1.Name = "itemQuantityDataGridViewTextBoxColumn1";
-            this.itemQuantityDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.itemQuantityDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // itemProdCostDataGridViewTextBoxColumn1
-            // 
-            this.itemProdCostDataGridViewTextBoxColumn1.DataPropertyName = "ItemProdCost";
-            this.itemProdCostDataGridViewTextBoxColumn1.HeaderText = "ItemProdCost";
-            this.itemProdCostDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.itemProdCostDataGridViewTextBoxColumn1.Name = "itemProdCostDataGridViewTextBoxColumn1";
-            this.itemProdCostDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.itemProdCostDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // itemSellPriceDataGridViewTextBoxColumn1
-            // 
-            this.itemSellPriceDataGridViewTextBoxColumn1.DataPropertyName = "ItemSellPrice";
-            this.itemSellPriceDataGridViewTextBoxColumn1.HeaderText = "ItemSellPrice";
-            this.itemSellPriceDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.itemSellPriceDataGridViewTextBoxColumn1.Name = "itemSellPriceDataGridViewTextBoxColumn1";
-            this.itemSellPriceDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.itemSellPriceDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // itemIDDataGridViewTextBoxColumn
-            // 
-            this.itemIDDataGridViewTextBoxColumn.DataPropertyName = "ItemID";
-            this.itemIDDataGridViewTextBoxColumn.HeaderText = "ItemID";
-            this.itemIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.itemIDDataGridViewTextBoxColumn.Name = "itemIDDataGridViewTextBoxColumn";
-            this.itemIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.itemIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // itemNameDataGridViewTextBoxColumn
-            // 
-            this.itemNameDataGridViewTextBoxColumn.DataPropertyName = "ItemName";
-            this.itemNameDataGridViewTextBoxColumn.HeaderText = "ItemName";
-            this.itemNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.itemNameDataGridViewTextBoxColumn.Name = "itemNameDataGridViewTextBoxColumn";
-            this.itemNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.itemNameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // itemTypeDataGridViewTextBoxColumn
-            // 
-            this.itemTypeDataGridViewTextBoxColumn.DataPropertyName = "ItemType";
-            this.itemTypeDataGridViewTextBoxColumn.HeaderText = "ItemType";
-            this.itemTypeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.itemTypeDataGridViewTextBoxColumn.Name = "itemTypeDataGridViewTextBoxColumn";
-            this.itemTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.itemTypeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // itemWeightDataGridViewTextBoxColumn
-            // 
-            this.itemWeightDataGridViewTextBoxColumn.DataPropertyName = "ItemWeight";
-            this.itemWeightDataGridViewTextBoxColumn.HeaderText = "ItemWeight";
-            this.itemWeightDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.itemWeightDataGridViewTextBoxColumn.Name = "itemWeightDataGridViewTextBoxColumn";
-            this.itemWeightDataGridViewTextBoxColumn.ReadOnly = true;
-            this.itemWeightDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // itemQuantityDataGridViewTextBoxColumn
-            // 
-            this.itemQuantityDataGridViewTextBoxColumn.DataPropertyName = "ItemQuantity";
-            this.itemQuantityDataGridViewTextBoxColumn.HeaderText = "ItemQuantity";
-            this.itemQuantityDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.itemQuantityDataGridViewTextBoxColumn.Name = "itemQuantityDataGridViewTextBoxColumn";
-            this.itemQuantityDataGridViewTextBoxColumn.ReadOnly = true;
-            this.itemQuantityDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // itemProdCostDataGridViewTextBoxColumn
-            // 
-            this.itemProdCostDataGridViewTextBoxColumn.DataPropertyName = "ItemProdCost";
-            this.itemProdCostDataGridViewTextBoxColumn.HeaderText = "ItemProdCost";
-            this.itemProdCostDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.itemProdCostDataGridViewTextBoxColumn.Name = "itemProdCostDataGridViewTextBoxColumn";
-            this.itemProdCostDataGridViewTextBoxColumn.ReadOnly = true;
-            this.itemProdCostDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // itemSellPriceDataGridViewTextBoxColumn
-            // 
-            this.itemSellPriceDataGridViewTextBoxColumn.DataPropertyName = "ItemSellPrice";
-            this.itemSellPriceDataGridViewTextBoxColumn.HeaderText = "ItemSellPrice";
-            this.itemSellPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.itemSellPriceDataGridViewTextBoxColumn.Name = "itemSellPriceDataGridViewTextBoxColumn";
-            this.itemSellPriceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.itemSellPriceDataGridViewTextBoxColumn.Width = 125;
-            // 
             // vehicleDBindingSource
             // 
             this.vehicleDBindingSource.DataSource = typeof(Backend.Vehicle.VehicleD);
@@ -1839,6 +1840,7 @@ namespace Management_System.IU
             this.stockSearchSortPanel.ResumeLayout(false);
             this.stockSearchSortPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockSFSumData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stockSystemBindingSource)).EndInit();
             this.stockChangePanel.ResumeLayout(false);
             this.stockChangePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockChangeData)).EndInit();
@@ -1851,7 +1853,6 @@ namespace Management_System.IU
             this.stockDisplayPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockDisplayData)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.stockSystemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleDBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleDBindingSource1)).EndInit();
             this.ResumeLayout(false);

@@ -2,10 +2,6 @@
 using Backend.Stock;
 using Backend.Vehicle;
 using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace Management_System.IU
@@ -38,6 +34,7 @@ namespace Management_System.IU
             orders.ordersToFile();
             Application.Exit();
         }
+
     }
 
 

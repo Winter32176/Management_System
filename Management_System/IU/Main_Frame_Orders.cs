@@ -37,16 +37,29 @@ namespace Management_System.IU
             itemOrData.DataSource = null;
             itemOrData.DataSource = stockSystem.ItemsList;
 
-            // adding records about vehicles in combo box
-            var vSize = vehicles.VechiclesList.Count;
-            string[] vArray = new string[vSize];
-            for (int i = 0; i < vSize; i++)
+
+
+        }
+
+        // adding records about vehicles in combo box
+        private void orderAddPanel_visibleChange(object sender, EventArgs e)
+        {
+            if (orderAddPanel.Visible==true)
             {
-                vArray[i] = vehicles.VechiclesList[i].VechicleType.ToString() +
-                    " ID:" + vehicles.VechiclesList[i].VehicleID.ToString() +
-                    " LoadCap:" + vehicles.VechiclesList[i].LoadCap.ToString();
+                // adding records about vehicles in combo box
+                vehiclesCB.Items.Clear();
+                var vSize = vehicles.VechiclesList.Count;
+                string[] vArray = new string[vSize];
+
+                for (int i = 0; i < vSize; i++)
+                {
+                    vArray[i] = vehicles.VechiclesList[i].VechicleType.ToString() +
+                        " ID:" + vehicles.VechiclesList[i].VehicleID.ToString() +
+                        " LoadCap:" + vehicles.VechiclesList[i].LoadCap.ToString();
+                }
+
+                vehiclesCB.Items.AddRange(vArray);
             }
-            vehiclesCB.Items.AddRange(vArray);
         }
 
         private void itemToOrderB_Click(object sender, EventArgs e)
@@ -85,8 +98,8 @@ namespace Management_System.IU
             }
             else
             {
-                foreach(Tuple<int, int> a in itemsToOrder)
-                stockSystem.restoreQuantity(a.Item1,a.Item2);
+                foreach (Tuple<int, int> a in itemsToOrder)
+                    stockSystem.restoreQuantity(a.Item1, a.Item2);
 
                 itemsToOrder.Clear();
 

@@ -1,10 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using Backend.Stock;
+using Backend.Vehicle;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization;
-using Backend.Stock;
-using Backend.Vehicle;
 
 namespace Backend.Orders
 {
@@ -87,7 +87,7 @@ namespace Backend.Orders
         // getting data from json file
         public void getDataFromFile()
         {
-            if (File.Exists("ordersList.json") &&  new FileInfo("ordersList.json").Length > 2)// empty json file contains two chars -> []
+            if (File.Exists("ordersList.json") && new FileInfo("ordersList.json").Length > 2)// empty json file contains two chars -> []
             {
                 string str = File.ReadAllText("ordersList.json"); // temp variable for info from file
                 var list = JsonConvert.DeserializeObject<List<OrderD>>(str);
@@ -117,7 +117,7 @@ namespace Backend.Orders
         {
             float totalWeight = 0;
             foreach (OrderedItem a in OrderedItems)
-                totalWeight += (a.ItemWeight*a.OrderedItemQuantity);
+                totalWeight += (a.ItemWeight * a.OrderedItemQuantity);
             return totalWeight;
         }
 
@@ -126,12 +126,12 @@ namespace Backend.Orders
         {
             float totalWeight = 0;
             StockSystem stockSystem = new StockSystem();
-            
+
             foreach (Tuple<int, int> a in itemsToOrder)
                 totalWeight += ((stockSystem.searchItem(a.Item1)).ItemWeight * a.Item2);
 
             VehicleD vehicles = new VehicleD();
-            if ((vehicles.VechiclesList[vechiclePossInList].LoadCap*1000) >= totalWeight) // load in tons, weight in kg
+            if ((vehicles.VechiclesList[vechiclePossInList].LoadCap * 1000) >= totalWeight) // load in tons, weight in kg
                 return true;
             else
                 return false;
@@ -144,8 +144,8 @@ namespace Backend.Orders
             {
                 // restore item quantity which were ordered
                 StockSystem stockSystem = new StockSystem();
-                foreach(OrderedItem orderedItem in ordersList[poss].orderedItems)
-                stockSystem.restoreQuantity(orderedItem.ItemID, orderedItem.OrderedItemQuantity);
+                foreach (OrderedItem orderedItem in ordersList[poss].orderedItems)
+                    stockSystem.restoreQuantity(orderedItem.ItemID, orderedItem.OrderedItemQuantity);
 
                 ordersList.RemoveAt(poss);
             }
@@ -154,7 +154,7 @@ namespace Backend.Orders
 
         public override string ToString()
         {
-            return "Order ID: " + OrderID + " Ordered items: " + string.Join(";", OrderedItems) 
+            return "Order ID: " + OrderID + " Ordered items: " + string.Join(";", OrderedItems)
                 + "Order weight: " + OrderWeight + " Delivery:" + DeliveryObj.ToString();
         }
     }

@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Backend.Vehicle;
+using System;
 using System.Globalization;
-using Backend.Vehicle;
 
 namespace Backend.Orders
 {

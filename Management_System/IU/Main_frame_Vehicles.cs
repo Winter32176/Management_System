@@ -210,10 +210,5 @@ namespace Management_System.IU
             return dt;
 
         }
-
-
-
-
-
     }
 }
