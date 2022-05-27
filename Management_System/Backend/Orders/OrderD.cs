@@ -131,7 +131,7 @@ namespace Backend.Orders
                 totalWeight += ((stockSystem.searchItem(a.Item1)).ItemWeight * a.Item2);
 
             VehicleD vehicles = new VehicleD();
-            if (vehicles.VechiclesList[vechiclePossInList].LoadCap >= totalWeight)
+            if ((vehicles.VechiclesList[vechiclePossInList].LoadCap*1000) >= totalWeight)
                 return true;
             else
                 return false;
