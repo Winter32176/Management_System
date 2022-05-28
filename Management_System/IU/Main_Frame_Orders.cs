@@ -18,7 +18,7 @@ namespace Management_System.IU
             orderPanel.Visible = true;
 
             // setting panel to proper size and possition
-            orderPanel.Location = new Point(0, 100);
+            orderPanel.Location = new Point(0, 130);
             orderPanel.Size = new System.Drawing.Size(1483, 667);
         }
 
@@ -30,7 +30,7 @@ namespace Management_System.IU
             orderAddPanel.Visible = true;
 
             // setting panel to proper size and possition
-            orderAddPanel.Location = new Point(170, 0);
+            orderAddPanel.Location = new Point(230, 0);
             orderAddPanel.Size = new System.Drawing.Size(1272, 673);
 
             // updating DataGrid
@@ -118,7 +118,7 @@ namespace Management_System.IU
             orderDisplayPanel.Visible = true;
 
             // setting panel to proper size and possition
-            orderDisplayPanel.Location = new Point(170, 0);
+            orderDisplayPanel.Location = new Point(230, 0);
             orderDisplayPanel.Size = new System.Drawing.Size(1272, 673);
 
             // updating DataGrid
@@ -138,7 +138,7 @@ namespace Management_System.IU
             orderDeletePanel.Visible = true;
 
             // setting panel to proper size and possition
-            orderDeletePanel.Location = new Point(170, 0);
+            orderDeletePanel.Location = new Point(230, 0);
             orderDeletePanel.Size = new System.Drawing.Size(1272, 673);
 
             // updating DataGrid

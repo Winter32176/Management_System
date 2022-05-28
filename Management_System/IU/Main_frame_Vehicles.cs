@@ -17,7 +17,7 @@ namespace Management_System.IU
             vehiclePanel.Visible = true;
 
             // setting panel to proper size and possition
-            vehiclePanel.Location = new Point(0, 100);
+            vehiclePanel.Location = new Point(0, 130);
             vehiclePanel.Size = new System.Drawing.Size(1483, 667);
 
         }
@@ -31,7 +31,7 @@ namespace Management_System.IU
             vehicleAddPanel.Visible = true;
 
             // setting panel to proper size and possition
-            vehicleAddPanel.Location = new Point(170, 0);
+            vehicleAddPanel.Location = new Point(230, 0);
             vehicleAddPanel.Size = new System.Drawing.Size(1272, 673);
         }
 
@@ -79,7 +79,7 @@ namespace Management_System.IU
             vehicleAddPanel.Visible = false;
 
             // setting panel to proper size and possition
-            vehicleChangePanel.Location = new Point(170, 0);
+            vehicleChangePanel.Location = new Point(230, 0);
             vehicleChangePanel.Size = new System.Drawing.Size(1272, 673);
 
             // updating DataGrid
@@ -141,7 +141,7 @@ namespace Management_System.IU
             vehiclesDisplayPanel.Visible = true;
 
             // setting panel to proper size and possition
-            vehiclesDisplayPanel.Location = new Point(170, 0);
+            vehiclesDisplayPanel.Location = new Point(230, 0);
             vehiclesDisplayPanel.Size = new System.Drawing.Size(1272, 673);
 
             // updating DataGrid
@@ -164,7 +164,7 @@ namespace Management_System.IU
             vehicleDeletePanel.Visible = true;
 
             // setting panel to proper size and possition
-            vehicleDeletePanel.Location = new Point(170, 0);
+            vehicleDeletePanel.Location = new Point(230, 0);
             vehicleDeletePanel.Size = new System.Drawing.Size(1272, 673);
 
             // updating DataGrid

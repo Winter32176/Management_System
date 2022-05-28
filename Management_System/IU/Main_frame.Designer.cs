@@ -29,6 +29,9 @@ namespace Management_System.IU
         /// </summary>
         private void InitializeComponent()
         {
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_frame));
             this.mainMenu = new System.Windows.Forms.Panel();
