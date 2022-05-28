@@ -16,7 +16,7 @@ namespace Management_System.IU
             stockPanel.Visible = true;
 
             // setting panel to proper size and possition
-            stockPanel.Location = new Point(0, 130);
+            stockPanel.Location = new Point(0, 100);
             stockPanel.Size = new System.Drawing.Size(1483, 667);
 
         }
@@ -31,7 +31,7 @@ namespace Management_System.IU
             stockDisplayPanel.Visible = false;
 
             // setting panel to proper size and possition
-            stockAddPanel.Location = new Point(210, 0);
+            stockAddPanel.Location = new Point(170, 0);
             stockAddPanel.Size = new System.Drawing.Size(1272, 673);
         }
         private void stockAddB_Click(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace Management_System.IU
             stockDisplayPanel.Visible = false;
 
             // setting panel to proper size and possition
-            stockChangePanel.Location = new Point(210, 0);
+            stockChangePanel.Location = new Point(170, 0);
             stockChangePanel.Size = new System.Drawing.Size(1272, 673);
 
             // updating DataGrid
@@ -90,7 +90,7 @@ namespace Management_System.IU
             stockDisplayPanel.Visible = false;
 
             // setting panel to proper size and possition
-            stockDeletePanel.Location = new Point(210, 0);
+            stockDeletePanel.Location = new Point(170, 0);
             stockDeletePanel.Size = new System.Drawing.Size(1272, 673);
 
             // updating DataGrid
@@ -120,7 +120,7 @@ namespace Management_System.IU
             stockDisplayPanel.Visible = true;
 
             // setting panel to proper size and possition
-            stockDisplayPanel.Location = new Point(210, 0);
+            stockDisplayPanel.Location = new Point(170, 0);
             stockDisplayPanel.Size = new System.Drawing.Size(1272, 673);
         }
 
@@ -161,7 +161,7 @@ namespace Management_System.IU
             stockDisplayPanel.Visible = false;
 
             // setting panel to proper size and possition
-            stockSearchSortPanel.Location = new Point(210, 0);
+            stockSearchSortPanel.Location = new Point(170, 0);
             stockSearchSortPanel.Size = new System.Drawing.Size(1272, 673);
 
             // updating DataGrid
